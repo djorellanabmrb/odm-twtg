@@ -4,7 +4,8 @@
   "description": "It is odm that will use in the sistem",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "install-dev-dep": "npm uninstall djorellanabmrb/configs-twtg#master && npm install --save djorellanabmrb/configs-twtg#master -or-commit-or-tag"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,9 @@
   "bugs": {
     "url": "https://github.com/djorellanabmrb/odm-twtg/issues"
   },
-  "homepage": "https://github.com/djorellanabmrb/odm-twtg#readme"
+  "homepage": "https://github.com/djorellanabmrb/odm-twtg#readme",
+  "dependencies": {
+    "configs-twtg": "github:djorellanabmrb/configs-twtg#master",
+    "mongoose": "^5.10.6"
+  }
 }
