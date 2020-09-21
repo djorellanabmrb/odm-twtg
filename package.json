@@ -1,0 +1,19 @@
+{
+  "name": "odm-twtg",
+  "version": "1.0.0",
+  "description": "It is odm that will use in the sistem",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/djorellanabmrb/odm-twtg.git"
+  },
+  "author": "djorellanab",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/djorellanabmrb/odm-twtg/issues"
+  },
+  "homepage": "https://github.com/djorellanabmrb/odm-twtg#readme"
+}
