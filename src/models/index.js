@@ -1,3 +1,3 @@
 module.exports = {
-    PersonModel: require("./person.model")
+    RouteModel: require("./routes.model")
 }

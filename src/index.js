@@ -14,7 +14,6 @@ class TwtgOdm{
 
     async connect(){
         try {
-            console.log(_getUri())
             await mongoose.connect(_getUri(),
             { useNewUrlParser: true, useUnifiedTopology: true });   
         } catch (error) {
