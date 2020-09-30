@@ -4,6 +4,7 @@ let userSchema = new mongoose.Schema({
     uid:{
         type: String,
         required: true,
+        unique: true
     },
     firstName:{
         type: String,
