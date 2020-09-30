@@ -25,7 +25,7 @@ let userSchema = new mongoose.Schema({
         type: String,
         required: false
     }, 
-    SUCURSAL: {
+    branchOffice: {
         type: String,
         required: false,
     },
