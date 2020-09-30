@@ -5,6 +5,14 @@ let userSchema = new mongoose.Schema({
         type: String,
         required: true,
     },
+    firstName:{
+        type: String,
+        required: true,
+    },
+    lastName:{
+        type: String,
+        required: true,
+    },
     agente:{
         type: String,
         required: true,
@@ -13,7 +21,15 @@ let userSchema = new mongoose.Schema({
         type: String,
         required: false
     }, 
-    sucursal: {
+    companyId: {
+        type: String,
+        required: false
+    }, 
+    SUCURSAL: {
+        type: String,
+        required: false,
+    },
+    branchOfficeId: {
         type: String,
         required: false,
     },
