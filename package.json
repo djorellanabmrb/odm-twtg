@@ -5,20 +5,20 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "install-dev-dep": "npm uninstall djorellanabmrb/configs-twtg#master && npm install --save djorellanabmrb/configs-twtg#master -or-commit-or-tag"
+    "install-dev-dep": "npm uninstall twowheelstogo/backend-configs-twtg#master && npm install --save twowheelstogo/backend-configs-twtg#master -or-commit-or-tag"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/djorellanabmrb/odm-twtg.git"
+    "url": "git+https://github.com/twowheelstogo/backend-odm-twtg.git"
   },
   "author": "djorellanab",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/djorellanabmrb/odm-twtg/issues"
+    "url": "https://github.com/twowheelstogo/backend-odm-twtg/issues"
   },
-  "homepage": "https://github.com/djorellanabmrb/odm-twtg#readme",
+  "homepage": "https://github.com/twowheelstogo/backend-odm-twtg#readme",
   "dependencies": {
-    "configs-twtg": "github:djorellanabmrb/configs-twtg#master",
+    "configs-twtg": "github:twowheelstogo/backend-configs-twtg#master",
     "mongoose": "^5.10.6"
   }
 }
