@@ -34,6 +34,15 @@ let userSchema = new mongoose.Schema({
         type: String,
         required: false,
     },
+    available: {
+        type: Boolean,
+        default: true
+    }, 
+    status: {
+        type: String,
+        enum: ["NEW", "QUEUE", "CHECKING", "UNABLE", "ABLE"],
+        default: true
+    }
   });
 
   module.exports = mongoose.model('Users', userSchema)
