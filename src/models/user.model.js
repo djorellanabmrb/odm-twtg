@@ -41,7 +41,7 @@ let userSchema = new mongoose.Schema({
     status: {
         type: String,
         enum: ["NEW", "QUEUE", "CHECKING", "UNABLE", "ABLE"],
-        default: true
+        default: "NEW"
     }
   });
 
