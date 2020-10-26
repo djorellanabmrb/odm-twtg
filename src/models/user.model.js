@@ -38,10 +38,22 @@ let userSchema = new mongoose.Schema({
         type: Boolean,
         default: true
     }, 
+    phone: {
+        type: String,
+        required: false
+    }, 
     status: {
         type: String,
-        enum: ["NEW", "QUEUE", "CHECKING", "UNABLE", "ABLE"],
+        enum: ["NEW", "QUEUE", "CHECKING", "UNABLE", "ACTIVE", "INACTIVE"],
         default: "NEW"
+    },
+    createdAt: {
+        type: Date,
+        default: Date.now
+    }, 
+    updatedAt: {
+        type: Date,
+        default: Date.now
     }
   });
 
