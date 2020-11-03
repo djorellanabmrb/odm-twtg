@@ -33,6 +33,27 @@ let userSchema = new mongoose.Schema({
     branchOfficeId: {
         type: String,
         required: false,
+    },
+    available: {
+        type: Boolean,
+        default: true
+    }, 
+    phone: {
+        type: String,
+        required: false
+    }, 
+    status: {
+        type: String,
+        enum: ["NEW", "QUEUE", "CHECKING", "UNABLE", "ACTIVE", "INACTIVE"],
+        default: "NEW"
+    },
+    createdAt: {
+        type: Date,
+        default: Date.now
+    }, 
+    updatedAt: {
+        type: Date,
+        default: Date.now
     }
   });
 
