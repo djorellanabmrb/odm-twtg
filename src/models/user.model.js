@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-
+const {pointType} = require("./types");
 let userSchema = new mongoose.Schema({
     uid:{
         type: String,
@@ -13,10 +13,19 @@ let userSchema = new mongoose.Schema({
     lastName:{
         type: String,
         required: true,
-    },
-    agente:{
+    }, 
+    phone: {
         type: String,
-        required: true,
+        required: false
+    }, 
+    address: {
+        type: String,
+        required: false
+    },
+    status: {
+        type: String,
+        enum: ["NEW", "QUEUE", "CHECKING", "UNABLE", "ACTIVE", "INACTIVE"],
+        default: "NEW"
     },
     company: {
         type: String,
@@ -33,19 +42,6 @@ let userSchema = new mongoose.Schema({
     branchOfficeId: {
         type: String,
         required: false,
-    },
-    available: {
-        type: Boolean,
-        default: true
-    }, 
-    phone: {
-        type: String,
-        required: false
-    }, 
-    status: {
-        type: String,
-        enum: ["NEW", "QUEUE", "CHECKING", "UNABLE", "ACTIVE", "INACTIVE"],
-        default: "NEW"
     },
     createdAt: {
         type: Date,
