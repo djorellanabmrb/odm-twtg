@@ -50,7 +50,10 @@ let userSchema = new mongoose.Schema({
     updatedAt: {
         type: Date,
         default: Date.now
-    }
+    },
+    pushToken: {
+        type: String,
+        required: false    }
   });
 
   module.exports = mongoose.model('Users', userSchema)
