@@ -4,54 +4,139 @@ let deliverySchema = new mongoose.Schema({
     address: {
         type: String,
     },
-    aliasId: {
+    alert: {
         type: String,
-        required: true,
+        enum : ['En tiempo','Verificar','Por llegar Tarde', 'Tarde'],
+        default: 'En tiempo'
     },
-    branchId: {
+    alias:{
+        id:{
+            type: String
+        },
+        name:{
+            type: String
+        }
+    },
+    branch:{
+        address:{
+            type: String
+        },
+        id: {
+            type: String
+        },
+        point: pointType,
+        name:{
+            type: String
+        }
+    },
+    circle:{
+        distance: {
+            type: Number
+        },
+        id:{
+            type: Number
+        },
+        time: {
+            type: Number
+        }
+    },
+    company:{
+        id: {
+            type: String
+        }, 
+        name: {
+            type: String
+        }
+    },
+    distanceTraveled:{
+        type: Number
+    },
+    locationEnd:pointType,
+    locationRef:pointType,
+    name:{
+        type: String
+    },
+    nota:{
+        type: String
+    },
+    orderId:{
+        type: String
+    },
+    orderPic:{
+        type: String
+    },
+    phone: {
+        type: String
+    },
+    provider: {
         type: String,
-        required: true,
+        enum : ['app', 'ecommerce', 'controller', 'branch'],
+        default: 'app'
     },
-    companyId:{
+    receivedPic:{
+        type: String
+    },
+    statusTimes:{
+        'En ruta': {
+            type: Date
+        },
+        'Aceptado': {
+            type: Date
+        },
+        'En cola': {
+            type: Date
+        },
+        'Cancelado': {
+            type: Date
+        },
+        'Entregado': {
+            type: Date
+        },
+        'Pendiente': {
+            type: Date
+        }
+    },
+    status: {
         type: String,
-        required: true,
+        enum : ['Entregado', 'Cancelado'],
+        default: 'Entregado'
     },
-    createdAt:{
-        type: Date,
-        required: true,
+    time: {
+        type: Number
     },
-    cancelledAt: {
-        type: Date,
+    rating: {
+        type: Number
     },
-    customerName: {
-        type: String,
+    depto:{
+        name:{
+            type: String
+        },
+        id: {
+            type: Number
+        }
     },
-    alertId: {
-        type: String,
+    muni: {
+        name:{
+            type: String
+        },
+        id: {
+            type: Number
+        }
     },
-    locationEnd: pointType,
-    locationRef: pointType,
-    orderId: {
-        type: String,
+    zone: {
+        name:{
+            type: String
+        },
+        id: {
+            type: Number
+        }
     },
-    note: {
-        type: String,
+    orderObservations:{
+        type: String
     },
-    pictureStart: {
-        type: String,
-    },
-    recievedPic: {
-        type: String,
-    },
-    statusId: {
-        type: String,
-    },
-    updatedAt: {
-        type: Date
-    },
-    deliveredAt: {
-        type: Date,
-        required: true,
+    modifiedBy:{
+        name: {type: String},
+        id: {type: String}
     }
   });
 
