@@ -105,7 +105,8 @@ let deliverySchema = new mongoose.Schema({
         type: Number
     },
     rating: {
-        type: Number
+        calification:{type: Number},
+        opinion: {type: String}
     },
     depto:{
         name:{
