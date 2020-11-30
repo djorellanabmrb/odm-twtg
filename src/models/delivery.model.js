@@ -6,8 +6,8 @@ let deliverySchema = new mongoose.Schema({
     },
     alert: {
         type: String,
-        enum : ['En tiempo','Verificar','Por llegar Tarde', 'Tarde'],
-        default: 'En tiempo'
+        enum : ['En Tiempo','Verificar','Por llegar Tarde', 'Tarde'],
+        default: 'En Tiempo'
     },
     alias:{
         id:{
