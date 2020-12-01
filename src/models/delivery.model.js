@@ -96,7 +96,8 @@ let deliverySchema = new mongoose.Schema({
             type: Date
         }
     },
-    status: {
+    
+    : {
         type: String,
         enum : ['Entregado', 'Cancelado'],
         default: 'Entregado'
