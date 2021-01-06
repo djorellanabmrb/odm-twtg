@@ -1,5 +1,6 @@
 module.exports = {
     //DeliveryModel: require("./delivery.model"),
     UserModel: require("./user.model"),
-    CheckInModel: require("./check-in.model")
+    CheckInModel: require("./check-in.model"),
+    ControllerModel: require("./controller")
 }
