@@ -30,7 +30,8 @@ let controllerSchema = new mongoose.Schema({
         default: Date.now
     },
     active: {
-        type: Boolean
+        type: Boolean,
+        default: true
     },
     role: {
         type: String,
