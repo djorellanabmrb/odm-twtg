@@ -40,7 +40,7 @@ let controllerSchema = new mongoose.Schema({
     },
     role: {
         type: String,
-        enum : ['ADMIN', 'CUSTOMER_SERVICE', 'OPERATIVE'],
+        enum : ['ADMINISTRATOR', 'CONTROLLER', 'USER'],
         default: 'CUSTOMER_SERVICE'
     }
   });
