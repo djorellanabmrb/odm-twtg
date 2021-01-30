@@ -41,7 +41,7 @@ let controllerSchema = new mongoose.Schema({
     role: {
         type: String,
         enum : ['ADMINISTRATOR', 'CONTROLLER', 'USER'],
-        default: 'USERUSER'
+        default: 'USER'
     }
   });
 
